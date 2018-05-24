@@ -1,0 +1,19 @@
+extends layout
+
+block content
+        .container
+            .row
+                .col-sm
+                    h1 Results
+                    ul.list-group
+                        each result, i in results
+                            il.list-group-item
+                                p !{result.content}
+                .col-sm
+                    h1 Number of appearances
+                    ul.list-group
+                        each result, index in analysis
+                            il.list-group-item
+                                p !{index} with #{result}
+
+                    

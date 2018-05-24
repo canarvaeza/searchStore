@@ -1,0 +1,23 @@
+doctype html
+html
+    head
+        title Dev Test searchStore
+        link(rel='stylesheet' href='/bower_components/bootstrap/dist/css/bootstrap.css')
+    body
+        .container
+            br
+            h1 Dev Test searchStore
+            h3 Search your products
+            br
+            form(action="/search", method="post")
+                div.form-group
+                    label Search
+                    input.form-control(name='search', type='text')
+                input.btn.btn-primary(type='submit', value='submit')
+            br
+            block content
+            br
+            hr
+            footer
+                p Copyrights &copy; 2018
+            
